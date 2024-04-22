@@ -29,7 +29,7 @@
 	if($result_id)
 	{	
 		print '<table border=1>';
-		print '<TH> Status <TH> Course <TH> Score';
+		print '<TH> Gender <TH> Year <TH> Course <TH> Prep <TH> Participation <TH> Overall';
 		while($row = mysql_fetch_row($result_id))
 		{	print '<TR>';
 			foreach ($row as $field)
