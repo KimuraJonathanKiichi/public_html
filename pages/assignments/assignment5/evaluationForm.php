@@ -14,13 +14,10 @@
 	$connect = mysql_connect($host, $user, $passwd);
 	$query = "insert into EVALUATION values
 			('$gender', '$status', '$course', '$lecturePrep', '$studentPar', '$score')";
-	//print "The query is <i> $query </i>";
 	mysql_select_db($database);
 
 	if(mysql_query($query, $connect))
 	{
-		//print "<P>Insert successful.<P>";
-		//use include for showing the table content
         	include ("display.php");
 	}
 	else

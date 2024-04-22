@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="../../styles.css">
+		<link rel="stylesheet" href="../../../styles.css">
         <meta charset="UTF-8">
 		<title>
 			Evaluation Table
@@ -25,7 +25,7 @@
 	$passwd = 'cs389';
 	$database = 'jkpicard';
 	$connect = mysql_connect($host, $user, $passwd);
-	$query = "select Course from EVALUATION WHERE Course = '$course'";
+	$query = "SELECT * FROM EVALUATION WHERE COURSE = '$course'";
     print "The query is <i> $query </i> ";
 	mysql_select_db($database);
 	$result_id = mysql_query($query, $connect);
@@ -34,7 +34,8 @@
 		print '<table border=1>';
 		print '<TH> Gender <TH> Year <TH> Course <TH> Prep <TH> Participation <TH> Overall';
 		while($row = mysql_fetch_row($result_id))
-		{	print '<TR>';
+		{	
+			print '<TR>';
 			foreach ($row as $field)
 				print "<TD> $field </TD> ";
 			print '</TR>';
