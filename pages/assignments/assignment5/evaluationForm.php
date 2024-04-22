@@ -4,7 +4,7 @@
     $gender = $_POST['gender'];
 	$status = $_POST['status'];
     $lecturePrep = $_POST['lecturePrep'];
-    $studentPar = $_POST['studentPar']
+    $studentPar = $_POST['studentPar'];
 	$score = $_POST['overallSat'];
 
 	$host = 'localhost';
