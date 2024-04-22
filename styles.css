@@ -1,0 +1,90 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#98D78E, #E6F4E2);
+    background-attachment: fixed;
+    color: black;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid black;
+    width: 120px;
+    font-size: 10pt;
+    border-radius: 10px;
+    background-color: white;
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+nav ul li a:visited{
+    color: blue;
+}
+nav ul li a:active{
+    background-color: #CD8ED7;
+    color: white;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+table{
+    margin: 10px auto;
+}
+#assBox{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 750px;
+    height: auto;
+    margin: 10px auto;
+    padding: 8px;
+}
+#labBox{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 450px;
+    height: auto;
+    margin: 10px auto;
+    padding: 8px;
+}
+#dbBox{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+    padding: 8px;
+}
+.centered{
+    text-align: center;
+}
+.check{
+    height: 48px;
+    width: 48px;
+}
+.navBar{
+    display: inline-block;
+    margin: 5px;
+    padding: 0px;
+}
+.textBox{
+    height: auto;
+    width: 50px;
+}
+.together{
+    /*border: 1px solid red;*/
+    display: flex;
+    padding: 8px;
+}
+.togetherLeft{
+    height: 48px;
+    width: auto;
+}
+.togetherRight{
+    display: flex;
+}

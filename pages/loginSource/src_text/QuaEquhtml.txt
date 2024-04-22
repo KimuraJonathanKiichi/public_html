@@ -1,0 +1,23 @@
+
+<!-- QuaEqu.html  -->
+
+<CENTER>
+<H2>
+Quadratic Equation Calcluator
+</H2>
+<HR>
+<FORM action=QuaEqu.php method=post>
+a: <INPUT type=text size = 5 maxlength = 10  name = a>
+<P>
+b: <INPUT type=text size = 5 maxlength = 10 name = b>
+<P>
+c: <INPUT type=text size = 5 maxlength = 10 name = c 
+<P>
+<HR>
+<INPUT type=submit value=Submit>
+<INPUT type=reset value=Reset>
+</FORM>
+
+</CENTER>
+
+

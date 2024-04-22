@@ -1,0 +1,29 @@
+<center>
+<font color = "black" size = 3>
+<h2>
+Service Form
+</h2>
+<br>
+<h1>
+    	What did you like about the service?
+</h1>
+<br>
+</center>
+<hr>
+
+<form action=surveyFormAction.php method=post>
+        <input type="checkbox" name="prefer[]" value=0> A: The marvelous food preparation
+        <br>
+	<input type="checkbox" name="prefer[]" value=1> B: The affordable prices
+        <br>
+	<input type="checkbox" name="prefer[]" value=2> C: The speedy service
+        <br>
+	<input type="checkbox" name="prefer[]" value=3> D: Just the Tuna
+        <br>
+	<input type="checkbox" name="prefer[]" value=4> E: None of the above
+        <br>
+<p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</p>
+</form>

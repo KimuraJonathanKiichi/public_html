@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../styles.css">
+    <title>Evaluation Form</title>
+</head>
+<body>
+    <div class="centered">
+        <h1>
+            Welcome to the evaluation form for our CS degree related courses!
+        </h1>
+        <hr>
+        <form action="evaluationform.php" method="post">
+            <p>
+                <label for="course">Course: </label>
+                <input class="textBox" type="text" name="course" id="course">
+            </p>
+            <p>
+                Gender:
+                <input type="radio" name="gender" id="male" value="MALE">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="FEMALE">
+                <label for="female">Female</label>
+            </p>
+            <p>
+                Year:
+                <br>
+                <input type="radio" name="status" id="freshman" value=freshman>
+                <label for="freshman">Freshman</label><br>
+                <input type="radio" name="status" id="sophomore" value=sophomore>
+                <label for="sophomore">Sophomore</label><br>
+                <input type="radio" name="status" id="junior" value=junior>
+                <label for="junior">Junior</label><br>
+                <input type="radio" name="status" id="senior" value=senior>
+                <label for="senior">Senior</label><br>
+            </p>
+            <p>Lecture Prep: 
+                <br>
+                <input type="radio" name="lecturePrep" id="poor1" value="0">
+                <label for="poor1">Poor</label><br>
+                <input type="radio" name="lecturePrep" id="average1" value="1">
+                <label for="average1">Average</label><br>
+                <input type="radio" name="lecturePrep" id="good1" value="2">
+                <label for="good1">Good</label><br>
+            </p>
+            <p>Student Participation: 
+                <br>
+                <input type="radio" name="studentPar" id="poor2" value="0">
+                <label for="poor2">Poor</label><br>
+                <input type="radio" name="studentPar" id="average2" value="1">
+                <label for="average">Average</label><br>
+                <input type="radio" name="studentPar" id="good2" value="2">
+                <label for="good2">Good</label><br>
+            </p>
+            <p>Overall Satisfaction: 
+                <br>
+                <input type="radio" name="overallSat" id="poor3" value="0">
+                <label for="poor3">Poor</label><br>
+                <input type="radio" name="overallSat" id="average3" value="1">
+                <label for="average3">Average</label><br>
+                <input type="radio" name="overallSat" id="good3" value="2">
+                <label for="good3">Good</label><br>
+            </p>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+</html>

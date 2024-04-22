@@ -1,0 +1,32 @@
+<html>
+<center>
+<head>
+    <title>Course Evaluation Form</title>
+</head>
+<body>
+    <h2>Course Evaluation Form</h2>
+    <form action="ass2b.php" method="post">
+        <label for="first_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name">
+
+	<br>
+	<br>
+
+	<Label for="last_name">Last Name: </label>
+	<input type="text" id="last_name" name="last_name">
+
+	<br>
+	<br>
+
+        <label for="course">Course:</label>
+        <select name="course">
+       		<option value="CS 212">CS 212</option>
+        	<option value="CS 311">CS 311</option>
+        	<option value="CS 389">CS 389</option>
+	
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</center>
+</html>

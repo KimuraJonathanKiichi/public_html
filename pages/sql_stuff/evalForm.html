@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../../styles.css">
+        <meta charset="UTF-8">
+        <title>
+            Evaluation Form
+        </title>
+    </head>
+    <body>
+        <div class="centered">
+            <h1>
+                Welcome to the evaluation form for our CS degree related courses!
+            </h1>
+            <hr>
+            <form action="evalForm.php" method="post">
+                <p>Year:
+                    <br>
+                    <input type="radio" name="status" id="freshman" value=freshman>
+                    <label for="freshman">Freshman</label><br>
+                    <input type="radio" name="status" id="sophomore" value=sophomore>
+                    <label for="sophomore">Sophomore</label><br>
+                    <input type="radio" name="status" id="junior" value=junior>
+                    <label for="junior">Junior</label><br>
+                    <input type="radio" name="status" id="senior" value=senior>
+                    <label for="senior">Senior</label><br>
+                </p>
+                <p>
+                    <label for="course">Course: </label>
+                    <input class="textBox" type="text" name="course" id="course">
+                </p>
+                <p>Course Evaluation:
+                    <br>
+                    <input type="radio" name="score" id="poor" value="0">
+                    <label for="grade">Poor</label><br>
+                    <input type="radio" name="score" id="average" value="1">
+                    <label for="average">Average</label><br>
+                    <input type="radio" name="score" id="good" value="2">
+                    <label for="good">Good</label><br>
+                </p>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<center>
+
+<?php session_start();   
+
+	$first_name = $_POST['first_name'];
+	$last_name = $_POST['last_name'];
+	$course_name = $_POST['course'];
+
+        $_SESSION['first'] = $first_name;
+	$_SESSION['last'] = $last_name;
+	$_SESSION['course'] = $course_name;
+	print "{$_SESSION['first']} {$_SESSION['last']}'s course evaluation of {$_SESSION['course']}";
+?>
+<HR>
+
+<form action="ass2bCont.php" method="post">
+	
+
+	
+	<P> Question 1: I am satisfied with the course material.</P>
+	<input type="radio" name="q1" value="Strongly Agree">
+	<label for="q1">Strongly Agree</label><br>
+	<input type="radio" name="q1" value="Agree">
+	<label for="q1">Agree</label><br>
+	<input type="radio" name="q1" value="Disagree">
+	<label for="q1">Disagree</label><br>
+
+	<P> Question 2: The Instructor was effective in teaching my the course material. </P>
+	<input type="radio" name="q2" value="Strongly Agree">
+        <label for="q2">Strongly Agree</label><br>
+        <input type="radio" name="q2" value="Agree">
+        <label for="q2">Agree</label><br>
+        <input type="radio" name="q2" value="Disagree">
+        <label for="q2">Disagree</label><br>
+
+	<P> Question 3: I enjoyed taking this course. </P>
+	<input type="radio" name="q3" value="Strongly Agree">
+        <label for="q3">Strongly Agree</label><br>
+        <input type="radio" name="q3" value="Agree">
+        <label for="q3">Agree</label><br>
+        <input type="radio" name="q3" value="Disagree">
+        <label for="q3">Disagree</label><br>
+
+	<input type="submit" value="Submit">
+</form>
+</center>
+</html>

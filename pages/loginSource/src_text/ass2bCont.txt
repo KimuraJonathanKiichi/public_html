@@ -1,0 +1,15 @@
+<html>
+<center>
+
+<?php
+     	session_start();
+
+        $first_name = $_SESSION['first'];
+        $last_name = $_SESSION['last'];
+        $course_name = $_SESSION['course'];
+        $q1 = $_POST['q1'];
+        $q2 = $_POST['q2'];
+        $q3 = $_POST['q3'];
+        print "$first_name $last_name, your answers were: <P>Question 1: $q1 </P><P>Question 2: $q2 </P><P>Question 3: $q3 </P><P> for course: $course_name";
+?>
+
