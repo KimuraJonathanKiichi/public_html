@@ -23,7 +23,7 @@
 	$database = 'jkpicard';
 	$connect = mysql_connect($host, $user, $passwd);
 	$query = "select * from EVALUATION";
-//	print "The query is <i> $query </i> ";
+    print "The query is <i> $query </i> ";
 	mysql_select_db($database);
 	$result_id = mysql_query($query, $connect);
 	if($result_id)
