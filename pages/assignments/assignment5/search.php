@@ -25,7 +25,7 @@
 	$passwd = 'cs389';
 	$database = 'jkpicard';
 	$connect = mysql_connect($host, $user, $passwd);
-	$query = "select * from EVALUATION WHERE COURSE = $course";
+	$query = "select COURSE from EVALUATION WHERE COURSE = '$course'";
     print "The query is <i> $query </i> ";
 	mysql_select_db($database);
 	$result_id = mysql_query($query, $connect);
