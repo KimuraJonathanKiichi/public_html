@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery Show Hide Elements Using Radio Buttons</title>
+<link rel="stylesheet" href="/~jkpicard/styles.css">
+<title>
+    jQuery Show Hide Elements Using Radio Buttons
+</title>
 <style>
     .box{
         color: #fff;
@@ -10,7 +13,9 @@
         display: none;
         margin-top: 20px;
     }
-    .red{ background: #ff0000; }
+    .red{ 
+        
+     }
     .green{ background: #228B22; }
     .blue{ background: #0000ff; }
     label{ margin-right: 15px; }
@@ -33,7 +38,20 @@ $(document).ready(function(){
         <label><input type="radio" name="colorRadio" value="green"> green</label>
         <label><input type="radio" name="colorRadio" value="blue"> blue</label>
     </div>
-    <div class="red box">You have selected <strong>red radio button</strong> so i am here</div>
+    <div class="red box">
+        <p>
+            <input class="nt" type="text" name="ownerFirstName" id="ownerFirstName">
+        </p>
+        <p>
+            <input class="nt" type="text" name="ownerLastName" id="ownerLastName">
+        </p>
+        <p>
+            <input class="nt" type="text" name="ownerPhoneNumber" id="ownerPhoneNumber">
+        </p>
+        <p>
+            <input class="nt" type="text" name="ownerToDriver" id="ownerToDriver">
+        </p>
+    </div>
     <div class="green box">You have selected <strong>green radio button</strong> so i am here</div>
     <div class="blue box">You have selected <strong>blue radio button</strong> so i am here</div>
 </body>

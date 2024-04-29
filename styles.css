@@ -75,6 +75,9 @@ table{
     margin: 5px;
     padding: 0px;
 }
+.nt{
+    display: block;
+}
 .textBox{
     height: auto;
     width: 50px;
