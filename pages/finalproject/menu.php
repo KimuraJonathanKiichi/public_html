@@ -1,10 +1,18 @@
+<?php session_start();
+    if(!$_SESSION['password'])
+        $_SESSION['password'] = $_POST['password'];
+    $password = $_SESSION['password'];
+    if($password != "password")
+        print "<h2>INVALID PASSWORD</h2>";
+    else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles.css">
-    <title>Login</title>
+    <title>Menu</title>
 </head>
 <body>
     <header>
@@ -20,16 +28,26 @@
                 </ul>
             </nav>
         </div>
-    </header>
+	</header>
     <div class="centered">
         <div id="wrapper">
-            <h1>Login</h1>
-            <hr>
-            <form action="menu.php" method="post">
-                <label for="Password">Password: </label>
-                <input type="password" name="password" id="Password">
-            </form>
+            <p>
+                Welcome to our game review database!
+            </p>
+            <p>
+                <a href="./survey/survey.html">Add a review!</a>
+            </p>
+            <p>
+                <a href="./display.php">Game review table!</a>
+            </p>
+            <p>
+                <a href="./filter/filter.html">Search!</a>
+            </p>
         </div>
     </div>
 </body>
 </html>
+<?php
+}
+?>
+
