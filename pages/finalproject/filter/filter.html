@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../styles.css">
+    <title>Search</title>
+</head>
+<body>
+    <header>
+        <div class="together">
+            <a href="/~jkpicard/index.html"><img src="/~jkpicard/images/home.png" alt="Home"></a>
+            <nav>
+                <ul class="navBar">
+                    <li><a href="/~jkpicard/pages/labs/labsList.html">Labs</a></li>
+                    <li><a href="/~jkpicard/pages/assignments/assignmentsList.html">Assignments</a></li>
+                    <li><a href="/~jkpicard/pages/sql_stuff/DBList.html">Database</a></li>
+                    <li><a href="/~jkpicard/testing/testJavaScript.html">JS test</a></li>
+                    <li><a href="/~jkpicard/pages/finalproject/projectindex.html">Final Project CS389</a></li>
+                </ul>
+            </nav>
+        </div>
+	</header>
+    <div class="centered">
+        <div id="wrapper">
+            <h2>Search!</h2>
+            <hr>
+            <p>
+                <form action="filterSearch.php" method="post">
+                    
+                    <label for="game">Game: </label>
+                    <input type="text" name="game" id="game">
+
+                    <label for="rating">Rating: </label>
+                    <input type="number" name="rating" id="rating" min="1" max="5">
+
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </form>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
